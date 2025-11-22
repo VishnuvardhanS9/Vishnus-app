@@ -10,6 +10,7 @@ pipeline {
 
         stage("build") {
             steps {
+                echo " code clone stage" 
                 sh 'docker build -t vishnuapp .'
             }
         }
